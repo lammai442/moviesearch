@@ -10,7 +10,7 @@ if (
 	window.location.pathname === '/index.html' ||
 	window.location.pathname === '/moviesearch/'
 ) {
-	console.log('här');
+	console.log('index');
 	indexPageSetup();
 }
 
