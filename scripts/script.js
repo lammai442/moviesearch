@@ -3,13 +3,14 @@ import {
 	favouritePageSetup,
 	searchPageSetup,
 } from './pageSetups/pageSetups.js';
-console.log('här');
 
 // Index-sidan
 if (
 	window.location.pathname === '/' ||
-	window.location.pathname === '/index.html'
+	window.location.pathname === '/index.html' ||
+	window.location.pathname === '/moviesearch/'
 ) {
+	console.log('här');
 	indexPageSetup();
 }
 
