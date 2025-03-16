@@ -10,16 +10,26 @@ if (
 	window.location.pathname === '/index.html' ||
 	window.location.pathname === '/moviesearch/'
 ) {
-	console.log('index');
+	console.log('index1');
 	indexPageSetup();
 }
 
 // Favorites-sidan
-else if (window.location.pathname === '/favorites.html') {
+else if (
+	window.location.pathname === '/favorites.html' ||
+	window.location.pathname === '/moviesearch/favorites.html'
+) {
+	console.log('favorites');
+
 	favouritePageSetup();
 }
 
 // Search-sidan
-else if (window.location.pathname === '/search.html') {
+else if (
+	window.location.pathname === '/search.html' ||
+	window.location.pathname === '/moviesearch/search.html'
+) {
+	console.log('search');
+
 	searchPageSetup();
 }
